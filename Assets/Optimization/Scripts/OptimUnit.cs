@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.Profiling;
 using Random = UnityEngine.Random;
+
+#if UNITY_EDITOR
+using UnityEditor.ShaderGraph.Internal;
+#endif
 
 public class OptimUnit : MonoBehaviour
 {
